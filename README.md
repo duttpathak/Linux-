@@ -1,45 +1,45 @@
-What is Linux?
+1 What is Linux?
 
 Linux is an open source OS. OS is the software that directly manages a system's hardware and resources, like CPU, memory, and storage.
 
-What are the various styles of Linux?
+2 What are the various styles of Linux?
 
 Debian 
 Fedora Linux
 Ubuntu
 
-What command(s) can you run to identify the style of Linux?
+3 What command(s) can you run to identify the style of Linux?
 
 uname -a
 
-What is the Linux kernel? 
+4 What is the Linux kernel? 
 
 The Linux kernel is the main component of Linux OS and it handles the OS's primary function. It helps with communication between the user and hardware.
 
-How does the kernel differ from an OS?
-
+5 How does the kernel differ from an OS?
+ 
 An operating system is a system software that acts as the interface between the users and the machine, while a kernel is a part of the OS that converts user commands into machine language. 
 
 
-What command(s) can you run to locate information on the kernel?
+6 What command(s) can you run to locate information on the kernel?
 
 
 uname -r or -a -a #shows the version of the linux kernel
 
 
-What is a kernel module?
+7 What is a kernel module?
 
 Kernel modules are pieces of code that can be loaded and unloaded into the kernel upon demand. They extend the functionality of the kernel without the need to reboot the system. 
 
-How do you list all the kernel modules?
+8 How do you list all the kernel modules?
 
 lsmode
 
-What is a run-level in Linux?
+9 What is a run-level in Linux?
 
 A run level is a state of init and the whole system that defeines what system services are operating. They are identified by numbers. 
 
-How many run-levels are there in Linux?
+10 How many run-levels are there in Linux?
 
 There are 7 run levels in Linux. 
 
@@ -52,11 +52,11 @@ There are 7 run levels in Linux.
 6  Reboot which is used to restart the system.
 
 
-How do you change to a different run-level?
+11 How do you change to a different run-level?
 
 Using the init command. 
 
-Explain the steps a Linux system goes through when it boots. 
+12 Explain the steps a Linux system goes through when it boots. 
 
 1. BIOS- Baisc Input/Output system. Loads and executes the Master Boot Record boot loader
 2. MBR - Master Boot Record, loads and execues the GRUB boot loader. 
@@ -65,31 +65,31 @@ Explain the steps a Linux system goes through when it boots.
 5. Init- At this point the system executes runlevel programs. The system looks for an init file, usually found at /etc/inittab to decide the Linux run level. 
 6. Runlevel programs- Depending on the Linux distribution installed, you may see different services getting started. These are known as runlevel programs, and are executed from different directories depending on your run level. 
 
-What is swap space, why is it important, and what is a typical size for it?
+13 What is swap space, why is it important, and what is a typical size for it?
 
-What is a symbolic link in Linux? How is it different than a hard link?
+14 What is a symbolic link in Linux? How is it different than a hard link?
 
-What is a filesystem? 
+15 What is a filesystem? 
 
-What are the four fundamental components of every filesystem in Linux? Define each.
+16 What are the four fundamental components of every filesystem in Linux? Define each.
 
-What is an inode in Linux?
+17 What is an inode in Linux?
 
-Explain what happens to the inode when you run the rm command in Linux.
+18 Explain what happens to the inode when you run the rm command in Linux.
 
-What are the default file descriptors each file gets in Linux and their IDs?
+19 What are the default file descriptors each file gets in Linux and their IDs?
 
-What is the name and ID of the first process started by the kernel when Linux starts?
+20 What is the name and ID of the first process started by the kernel when Linux starts?
 
-Explain the different states a process can be in Linux?
+21 Explain the different states a process can be in Linux?
 
-How would you find the status of a process in Linux?
+22 How would you find the status of a process in Linux?
 
-Describe and explain the different process signals in Linux.
+23 Describe and explain the different process signals in Linux.
 
-How do you debug a running process or a library that is being called in Linux?
+24 How do you debug a running process or a library that is being called in Linux?
 
-What is the difference between a SIGKILL and SIGTERM in Linux?
+25 What is the difference between a SIGKILL and SIGTERM in Linux?
 
 
 
