@@ -43,6 +43,7 @@ A run level is a state of init and the whole system that defeines what system se
 
 There are 7 run levels in Linux. 
 
+```
 0  System halt i.e the system can be safely powered off with no activity.
 1  Single user mode.
 2  Multiple user mode with no NFS(network file system).
@@ -50,7 +51,7 @@ There are 7 run levels in Linux.
 4  User-definable.
 5  Multiple user mode under GUI (graphical user interface) and this is the standard runlevel for most of the LINUX based systems.
 6  Reboot which is used to restart the system.
-
+```
 
 11 How do you change to a different run-level?
 
