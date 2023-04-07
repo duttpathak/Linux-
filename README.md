@@ -3,10 +3,11 @@
 Linux is an open source OS. OS is the software that directly manages a system's hardware and resources, like CPU, memory, and storage.
 
 2 What are the various styles of Linux?
-
+```
 Debian 
-Fedora Linux
+Fedora 
 Ubuntu
+```
 
 3 What command(s) can you run to identify the style of Linux?
 
