@@ -2,7 +2,7 @@
 
 Linux is an open source OS. OS is the software that directly manages a system's hardware and resources, like CPU, memory, and storage.
 
-2 What are the various styles of Linux?
+2 What are the various styles (distributions) of Linux?
 ```
 Debian 
 Fedora 
@@ -95,7 +95,7 @@ Using the init command.
 
 
 
-
+Run it in containers (docker)
 
 
 To switch directories regardless of your current directory
