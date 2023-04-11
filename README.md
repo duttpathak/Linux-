@@ -56,7 +56,7 @@ lsmod (#use docker)
 
 10 What is a run-level in Linux?
 
-A run level is a an operating state on a Unix and Unix-based OS that is preset on the Linux-based system. Runlevels determine which programs can execute after the OS boots up and it defines the state of the machine after boot. 
+A run level is an operating state on a Unix and Unix-based OS that is preset on the Linux-based system. Runlevels determine which programs can execute after the OS boots up and it defines the state of the machine after boot. 
 
 
 11 How many run-levels are there in Linux?
