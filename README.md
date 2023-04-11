@@ -26,9 +26,9 @@ Parrot OS
 ```
 
 4 What command(s) can you run to identify the style of Linux?
-
+```
 $ uname -a
-
+```
 5 What is the Linux kernel? 
 
 The Linux kernel is the main component of Linux OS and it handles the OS's primary function. It helps with communication between the user and hardware.
