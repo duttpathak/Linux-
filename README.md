@@ -80,12 +80,12 @@ init X #X is replaced by the run evel you want to change to.
 
 13 Explain the steps a Linux system goes through when it boots. 
 
-1. BIOS- Basic Input/Output system. Loads and executes the Master Boot Record loader
+1. BIOS - Basic Input/Output system. Loads and executes the Master Boot Record loader
 2. MBR - Master Boot Record, loads and execues the GRUB boot loader. 
 3. GRUB - Also GNU GRUB, GNU GRand Unified Bootloader, is the typical boot loader for modern Linux systems. 
-4. Kernel- The core of any OS, Linux included. It has complete control over everything in your system. 
-5. Init- At this point the system executes runlevel programs. The system looks for an init file, usually found at /etc/inittab to decide the Linux run level. 
-6. Runlevel programs- Depending on the Linux distribution installed, you may see different services getting started. These are known as runlevel programs, and are executed from different directories depending on your run level. 
+4. Kernel - The core of any OS, Linux included. It has complete control over everything in your system. 
+5. Init - At this point the system executes runlevel programs. The system looks for an init file, usually found at /etc/inittab to decide the Linux run level. 
+6. Runlevel programs - Depending on the Linux distribution installed, you may see different services getting started. These are known as runlevel programs, and are executed from different directories depending on your run level. 
 
 14 What is swap space, why is it important, and what is a typical size for it?
 
