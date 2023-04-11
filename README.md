@@ -40,7 +40,7 @@ An operating system is a system software that acts as the interface between the 
 
 7 What command(s) can you run to locate information on the kernel?
 ```
-uname -r #shows the version of the linux kernel
+uname -r
 ```
 
 8 What is a kernel module?
@@ -51,7 +51,7 @@ A purpose for writing a kernel module is to provide a middle layer of code, or c
 
 9 How do you list all the kernel modules?
 ```
-lsmod (#use docker)
+lsmod 
 ```
 10 What is a run-level in Linux?
 
