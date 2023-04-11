@@ -41,7 +41,7 @@ An operating system is a system software that acts as the interface between the 
 7 What command(s) can you run to locate information on the kernel?
 
 
-uname -r or -a #shows the version of the linux kernel
+uname -a #shows the version of the linux kernel
 
 
 8 What is a kernel module?
