@@ -75,7 +75,7 @@ There are 7 run levels in Linux.
 12 How do you change to a different run-level?
 
 ```
-init X #X is replaced by the run evel you want to change to.  
+init X #X is replaced by the run level you want to change to.  
 ````
 
 13 Explain the steps a Linux system goes through when it boots. 
