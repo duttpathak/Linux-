@@ -80,7 +80,7 @@ init X #X is replaced by the run evel you want to change to.
 
 13 Explain the steps a Linux system goes through when it boots. 
 
-1. BIOS- Baisc Input/Output system. Loads and executes the Master Boot Record boot loader
+1. BIOS- Baisc Input/Output system. Loads and executes the Master Boot Record loader
 2. MBR - Master Boot Record, loads and execues the GRUB boot loader. 
 3. GRUB - Also GNU GRUB, GNU GRand Unified Bootloader, is the typical boot loader for modern Linux systems. 
 4. Kernel- The core of any OS, Linux included. It has complete control over everything in your system. 
@@ -89,7 +89,7 @@ init X #X is replaced by the run evel you want to change to.
 
 14 What is swap space, why is it important, and what is a typical size for it?
 
-Swap space is used when the amount of physical memory (RAM) is full. If the RAM is full, inactive pages in memory are moved to the swap space. 
+Swap space is used when the amount of physical memory (RAM) is full. If the RAM is full, inactive pages in memory are moved to the swap space. A typical size for swap space is 1 GB or less. 
 
 15 What is a symbolic link in Linux? How is it different than a hard link?
 
