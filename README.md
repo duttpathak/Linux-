@@ -39,10 +39,9 @@ An operating system is a system software that acts as the interface between the 
 
 
 7 What command(s) can you run to locate information on the kernel?
-
-
+```
 uname -r #shows the version of the linux kernel
-
+```
 
 8 What is a kernel module?
 
@@ -51,9 +50,9 @@ Kernel modules are pieces of code that can be loaded and unloaded into the kerne
 A purpose for writing a kernel module is to provide a middle layer of code, or common code, thus increasing the efficiency of your system by combining like tasks in a single area and eliminating redundant code.
 
 9 How do you list all the kernel modules?
-
+```
 lsmod (#use docker)
-
+```
 10 What is a run-level in Linux?
 
 A run level is an operating state on a Unix and Unix-based OS that is preset on the Linux-based system. Runlevels determine which programs can execute after the OS boots up and it defines the state of the machine after boot. 
