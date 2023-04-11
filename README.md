@@ -41,20 +41,23 @@ An operating system is a system software that acts as the interface between the 
 7 What command(s) can you run to locate information on the kernel?
 
 
-uname -r or -a -a #shows the version of the linux kernel
+uname -r or -a #shows the version of the linux kernel
 
 
 8 What is a kernel module?
 
 Kernel modules are pieces of code that can be loaded and unloaded into the kernel upon demand. They extend the functionality of the kernel without the need to reboot the system. 
 
+A purpose for writing a kernel module is to provide a middle layer of code, or common code, thus increasing the efficiency of your system by combining like tasks in a single area and eliminating redundant code.
+
 9 How do you list all the kernel modules?
 
-lsmode (#use docker)
+lsmod (#use docker)
 
 10 What is a run-level in Linux?
 
-A run level is a state of init and the whole system that defeines what system services are operating. They are identified by numbers. 
+A run level is a an operating state on a Unix and Unix-based OS that is preset on the Linux-based system. Runlevels determine which programs can execute after the OS boots up and it defines the state of the machine after boot. 
+
 
 11 How many run-levels are there in Linux?
 
@@ -85,9 +88,17 @@ Using the init command.
 
 14 What is swap space, why is it important, and what is a typical size for it?
 
+Swap space is used when the amount of physical memory (RAM) is full. If the RAM is full, inactive pages in memory are moved to the swap space. 
+
 15 What is a symbolic link in Linux? How is it different than a hard link?
 
+Symbolic links (symlink or soft link) are files that point to a file or directory in your system, but do not mirror the other file's data. Is it like a shortcut in Windoes which contains the path of the original file and its content.
+
+Symbolic link is an actual link to the original file, where a hard link is a mirror copy of the original file. If you delete the original file, the soft link is useless, because it will point to a non-existent file. 
+
 16 What is a filesystem? 
+
+Collection of data and/or files stored in a computer's hard disk or storage, your computer relies on this file system to ascertain the location and positioning of files in your storage. 
 
 17 What are the four fundamental components of every filesystem in Linux? Define each.
 
