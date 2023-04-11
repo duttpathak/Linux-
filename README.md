@@ -28,6 +28,8 @@ Parrot OS
 4 What command(s) can you run to identify the style of Linux?
 ```
 $ uname -a
+
+Darwin Dutts-MacBook-Pro.local 22.2.0 Darwin Kernel Version 22.2.0: Fri Nov 11 02:08:47 PST 2022; root:xnu-8792.61.2~4/RELEASE_X86_64 x86_64
 ```
 5 What is the Linux kernel? 
 
