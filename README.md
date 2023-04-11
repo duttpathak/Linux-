@@ -43,6 +43,9 @@ An operating system is a system software that acts as the interface between the 
 7 What command(s) can you run to locate information on the kernel?
 ```
 $ uname -r
+
+output
+22.2.0
 ```
 
 8 What is a kernel module?
