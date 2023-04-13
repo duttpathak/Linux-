@@ -109,9 +109,25 @@ Collection of data and/or files stored in a computer's hard disk or storage, you
 
 17 What are the four fundamental components of every filesystem in Linux? Define each.
 
+```
+Toolchain: Teh compiler and other tools needed to create code for your target device. Everything else deponds on the toolchain. 
+
+Bootloader: Teh program that initializes the board and loads the Linux kernel. 
+
+Kernel: This is the heart of the system, managing system resources and interfacing with hardware. 
+
+Root filesystem: Contains the libraries and programs that are run once the kernel has completed its initialization. 
+```
+
 18 What is an inode in Linux?
 
+Inode is abbreviation for "index node".
+
+Inode is a data structure that keeps track of all the files and directories within a Linux or UNIX-based filesystem. So every file and directory in a filesystem is allocated an inode, which is identified by an integer known as "inode number". THese unique indentifiers store metadata about each file and directory. 
+
 19 Explain what happens to the inode when you run the rm command in Linux.
+
+Running the rm command tells the system to label the inode and the data blocks of the file as unused. 
 
 20 What are the default file descriptors each file gets in Linux and their IDs?
 
@@ -120,6 +136,15 @@ Collection of data and/or files stored in a computer's hard disk or storage, you
 22 Explain the different states a process can be in Linux?
 
 23 How would you find the status of a process in Linux?
+
+```
+$ ps 
+
+Output:
+  PID TTY           TIME CMD
+50429 ttys000    0:03.29 /bin/zsh -il
+
+```
 
 24 Describe and explain the different process signals in Linux.
 
