@@ -135,6 +135,14 @@ Running the rm command tells the system to label the inode and the data blocks o
 
 22 Explain the different states a process can be in Linux?
 
+```
+Five Linux process states: 
+D = running & runnable (queued up to run or in the process of running).
+R = interruptable_sleep (during running, the process will get to a point where it is waiting on data. Ex. User input).
+S = uninterruptable_sleep (Process is waiting on something. Ex. mkdir).
+T = stopped (Suspended process, command Control+Z, in which the process is put on hold and not responsive).
+Z = zombie (Process where the parent has not done this cleanup and you have a process that is lingering. Process has already terminated but it is not quite dead yet.) 
+```
 23 How would you find the status of a process in Linux?
 
 ```
