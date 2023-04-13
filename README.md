@@ -159,6 +159,11 @@ Output:
 ```
 $ kill-l #lists all the available signals
 
+output
+HUP INT QUIT ILL TRAP ABRT EMT FPE KILL BUS SEGV SYS PIPE ALRM TERM URG STOP TSTP CONT CHLD TTIN TTOU IO XCPU XFSZ VTALRM PROF WINCH INFO USR1 USR2
+```
+
+```
 SIGHUP (1): If a process is running from a terminal and that terminal is closed accidentally, then the process receives this signal. “HUP” is short for “hang up” and terminates the process.
 
 SIGINT (2): Manual interruption of a process from a keyboard. When you hit Ctrl-C, it sends a SIGINT signal to the running process and terminates it.
@@ -179,6 +184,7 @@ SIGCHLD(17): This signal is sent by a child process to its parent to intimate th
 
 26 What is the difference between a SIGKILL and SIGTERM in Linux?
 
+SIGKILL kills the process abruptly, producing a fatal error. Whereas SIGTERM signal can be handled, ignored, and blocked. 
 
 
 Run it in containers (docker)
