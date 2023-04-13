@@ -156,6 +156,25 @@ Output:
 
 24 Describe and explain the different process signals in Linux.
 
+```
+$ kill-l #lists all the available signals
+
+SIGHUP (1): If a process is running from a terminal and that terminal is closed accidentally, then the process receives this signal. “HUP” is short for “hang up” and terminates the process.
+
+SIGINT (2): Manual interruption of a process from a keyboard. When you hit Ctrl-C, it sends a SIGINT signal to the running process and terminates it.
+
+SIGQUIT(3): When a user types <ctrl>+\ in the terminal. It will force the process to produce a core dump and will terminate the process.
+
+SIGKILL(9): Forcefully terminate a process. This signal can’t be blocked or handled. The receiving process cannot perform clean up when it is terminated with SIGKILL.
+
+SIGPIPE (13): Broken pipe. If a process is piping in its output to another process (producer | consumer) and if the consumer dies, the producer gets the SIGPIPE signal from the consumer, which terminates the producer process
+
+SIGTERM (15): It is the software termination signal. This is the signal that is sent by the kill command by default.
+
+SIGCHLD(17): This signal is sent by a child process to its parent to intimate that the child is stopped or terminated. If a child process terminates before the parent calls the wait syscall on it, the kernel tries to keep the information about the process so that the parent can later call wait to get to know the exit status.
+
+```
+
 25 How do you debug a running process or a library that is being called in Linux?
 
 26 What is the difference between a SIGKILL and SIGTERM in Linux?
