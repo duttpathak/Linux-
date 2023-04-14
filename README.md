@@ -123,7 +123,7 @@ Root filesystem: Contains the libraries and programs that are run once the kerne
 
 Inode is abbreviation for "index node".
 
-Inode is a data structure that keeps track of all the files and directories within a Linux or UNIX-based filesystem. So every file and directory in a filesystem is allocated an inode, which is identified by an integer known as "inode number". THese unique indentifiers store metadata about each file and directory. 
+Inode is a data structure that keeps track of all the files and directories within a Linux or UNIX-based filesystem. So every file and directory in a filesystem is allocated an inode, which is identified by an integer known as "inode number". These unique indentifiers store metadata about each file and directory. 
 
 19 Explain what happens to the inode when you run the rm command in Linux.
 
