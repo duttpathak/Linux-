@@ -110,13 +110,15 @@ Collection of data and/or files stored in a computer's hard disk or storage, you
 17 What are the four fundamental components of every filesystem in Linux? Define each.
 
 ```
-Toolchain: Teh compiler and other tools needed to create code for your target device. Everything else deponds on the toolchain. 
+Superblock - Contains information about the filesystem as a whole, 
+such as its size.
 
-Bootloader: Teh program that initializes the board and loads the Linux kernel. 
+Inode - Contains all information about a file, except its name.
 
-Kernel: This is the heart of the system, managing system resources and interfacing with hardware. 
+Data Block - The inode contains the numbers of several data blocks, which are used to store the data in the file. 
 
-Root filesystem: Contains the libraries and programs that are run once the kernel has completed its initialization. 
+Directory Block - The name is stored in the directory, together with the number of the inode. 
+
 ```
 
 18 What is an inode in Linux?
