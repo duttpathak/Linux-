@@ -129,7 +129,7 @@ Inode is a data structure that keeps track of all the files and directories with
 
 19 Explain what happens to the inode when you run the rm command in Linux.
 
-Running the rm command tells the system to label the inode and the data blocks of the file as unused. 
+The system marks the inode belonging to that file as unused and the data blocks of that file also as unused (but not wiped out).
 
 20 What are the default file descriptors each file gets in Linux and their IDs?
 
