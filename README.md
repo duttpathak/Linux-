@@ -58,6 +58,8 @@ A purpose for writing a kernel module is to provide a middle layer of code, or c
 9 How do you list all the kernel modules?
 ```
 $ lsmod 
+for Unix using docker
+$ docker run cmd.cat/lsmod lsmod
 ```
 10 What is a run-level in Linux?
 
@@ -120,6 +122,8 @@ Data Block - The inode contains the numbers of several data blocks, which are us
 Directory Block - The name is stored in the directory, together with the number of the inode. 
 
 ```
+Revise last one
+
 
 18 What is an inode in Linux?
 
@@ -130,6 +134,8 @@ Inode is a data structure that keeps track of all the files and directories with
 19 Explain what happens to the inode when you run the rm command in Linux.
 
 The system marks the inode belonging to that file as unused and the data blocks of that file also as unused (but not wiped out).
+
+Run it in linux 
 
 20 What are the default file descriptors each file gets in Linux and their IDs?
 
@@ -148,13 +154,14 @@ Z = zombie (Process where the parent has not done this cleanup and you have a pr
 23 How would you find the status of a process in Linux?
 
 ```
-$ ps 
+$ ps aux
 
 Output:
   PID TTY           TIME CMD
 50429 ttys000    0:03.29 /bin/zsh -il
 
 ```
+Run in Linux
 
 24 Describe and explain the different process signals in Linux.
 
@@ -182,7 +189,6 @@ SIGCHLD(17): This signal is sent by a child process to its parent to intimate th
 
 ```
 
-25 How do you debug a running process or a library that is being called in Linux?
 
 26 What is the difference between a SIGKILL and SIGTERM in Linux?
 
