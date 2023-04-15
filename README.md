@@ -149,6 +149,8 @@ Standard error    2
 
 21 What is the name and ID of the first process started by the kernel when Linux starts?
 
+The first process started by the kernel at boot time (PID=1) is called systemd in modern Linux distributions. 
+
 22 Explain the different states a process can be in Linux?
 
 ```
