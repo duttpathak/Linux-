@@ -139,6 +139,14 @@ Run it in linux
 
 20 What are the default file descriptors each file gets in Linux and their IDs?
 
+```
+File discriptors  IDs
+Standard input    0 
+Standard output   1
+Standard error    2
+
+```
+
 21 What is the name and ID of the first process started by the kernel when Linux starts?
 
 22 Explain the different states a process can be in Linux?
