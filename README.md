@@ -164,11 +164,12 @@ Z = zombie (Process where the parent has not done this cleanup and you have a pr
 23 How would you find the status of a process in Linux?
 
 ```
-$ ps aux
+$ ps a
 
 Output:
-  PID TTY           TIME CMD
-50429 ttys000    0:03.29 /bin/zsh -il
+  PID   TT  STAT      TIME COMMAND
+46975 s000  R+     0:00.01 ps a
+94539 s000  Ss     0:00.66 /bin/zsh -il
 
 ```
 Run in Linux
@@ -284,3 +285,7 @@ stout redirect to file number 1
 ls > 1 
 stout and sterr redirected to number 1
 echo > Welcome 2>&1
+
+
+
+6823463 
