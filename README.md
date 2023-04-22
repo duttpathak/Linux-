@@ -59,7 +59,22 @@ A purpose for writing a kernel module is to provide a middle layer of code, or c
 ```
 $ lsmod 
 for Unix using docker
-$ docker run cmd.cat/lsmod lsmod
+$ docker run cmd.cat/lsmod lsmod 
+Module                  Size  Used by
+xfrm_user              36864  1
+xfrm_algo              16384  1 xfrm_user
+fakeowner             114688  0
+shiftfs                28672  0
+grpcfuse               16384  0
+nfsd                  434176  2
+auth_rpcgss           122880  1 nfsd
+nfs                   307200  0
+lockd                  81920  2 nfsd,nfs
+grace                  16384  2 nfsd,lockd
+sunrpc                454656  5 nfsd,auth_rpcgss,lockd,nfs
+vmw_vsock_virtio_transport    16384  2
+vmw_vsock_virtio_transport_common    28672  1 vmw_vsock_virtio_transport
+vsock                  36864  6 vmw_vsock_virtio_transport_common,vmw_vsock_virtio_transport
 ```
 10 What is a run-level in Linux?
 
@@ -117,12 +132,11 @@ such as its size.
 
 Inode - Contains all information about a file, except its name.
 
-Data Block - The inode contains the numbers of several data blocks, which are used to store the data in the file. 
+Data Block/Dentry - The inode contains the numbers of several data blocks, which are used to store the data in the file. 
 
-Directory Block - The name is stored in the directory, together with the number of the inode. 
+File VFS (Virtual File System) - Keeps track of the currently-supported file systems, as well as those file systems that are currently mounted (associating a flie system to a storage divice in Linux).  
 
 ```
-Revise last one
 
 
 18 What is an inode in Linux?
@@ -289,3 +303,7 @@ echo > Welcome 2>&1
 
 
 6823463 
+
+
+
+17,19
