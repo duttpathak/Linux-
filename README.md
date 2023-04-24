@@ -149,7 +149,7 @@ Inode is a data structure that keeps track of all the files and directories with
 
 The system marks the inode belonging to that file as unused and the data blocks of that file also as unused (but not wiped out).
 ```
-rm filename
+$ rm filename
 ```
 
 20 What are the default file descriptors each file gets in Linux and their IDs?
