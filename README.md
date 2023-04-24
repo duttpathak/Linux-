@@ -151,7 +151,6 @@ The system marks the inode belonging to that file as unused and the data blocks 
 ```
 rm filename
 ```
-Run it in linux 
 
 20 What are the default file descriptors each file gets in Linux and their IDs?
 
